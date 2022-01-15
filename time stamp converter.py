@@ -7,9 +7,6 @@ while True:
         user_date = datetime.strptime(d, "%Y-%m-%d")
         user_timestamp = datetime.timestamp(user_date)
         print("your time stamp is", user_timestamp)
-        n = input("do u want to exit press t do do so")
-        if n == "t":
-            break
     x = input("do you want to convert a time stampt to a date press y to do so")
     if x == "y":
         timestamp = int(input("enter a time stamp here:"))
@@ -18,4 +15,5 @@ while True:
         exit = input("press q to exit if you wish")
         if exit == "q":
             break
+    else: break
     
