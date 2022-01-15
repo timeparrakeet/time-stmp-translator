@@ -1,5 +1,5 @@
-from datetime import date
-from datetime import datetime
+from datetime import *
+
 while True:
     t = input("do you want to convert a date to a time stamp press n to do so")
     if t == "n":
@@ -7,7 +7,9 @@ while True:
         user_date = datetime.strptime(d, "%Y-%m-%d")
         user_timestamp = datetime.timestamp(user_date)
         print("your time stamp is", user_timestamp)
-        
+        n = input("do u want to exit press t do do so")
+        if n == "t":
+            break
     x = input("do you want to convert a time stampt to a date press y to do so")
     if x == "y":
         timestamp = int(input("enter a time stamp here:"))
