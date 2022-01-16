@@ -3,7 +3,7 @@ from datetime import *
 while True:
     t = input("do you want to convert a date to a time stamp press n to do so")
     if t == "n":
-        d = str(input("enter a date in this order(yyyy-mm-dd):"))
+        d = str(input("enter a date in this order[make sure the date is between the years  1980 and 2999](yyyy-mm-dd):"))
         user_date = datetime.strptime(d, "%Y-%m-%d")
         user_timestamp = datetime.timestamp(user_date)
         print("your time stamp is", user_timestamp)
